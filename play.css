@@ -36,6 +36,8 @@ body {
   flex-shrink: 0;
   display: block;
   object-fit: cover;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
 }
 
 .list {
@@ -63,6 +65,7 @@ body {
   flex-direction: column;
   background-color: white;
   height: var(--parent-height);
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.8);
 }
 
 .player__header {
@@ -166,10 +169,16 @@ body {
   transition: transform var(--cubic-play-list);
 }
 
+/* se edita Css de img menu */
+
 .player__button--absolute--nw {
   top: 5.5%;
   left: 5.5%;
   position: absolute;
+  width: 1.5em;
+  height: 1.5em;
+  background: radial-gradient(black, transparent);
+  border-radius: 5px;
 }
 
 .player__button--absolute--center {
